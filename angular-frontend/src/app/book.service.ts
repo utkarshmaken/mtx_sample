@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Book } from './book';
 
-const baseUrl = 'http://localhost:8080/api/books';
+const baseUrl = 'http://localhost:8080/api/book';
 
 @Injectable()
 export class BookService {
