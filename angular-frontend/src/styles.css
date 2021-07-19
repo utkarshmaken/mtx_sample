@@ -2,9 +2,9 @@
 body {
   font-size: 18px;
   line-height: 1.58;
-  background: #1dbfd4;
-  background: -webkit-linear-gradient(to left, #6d7ecb, #33cad5);
-  background: linear-gradient(to left, #6d6fcb, #3394d5); 
+  background: #d4d11d;
+  background: -webkit-linear-gradient(to left, #7dcb6d, #33cad5);
+  background: linear-gradient(to left, #618044, #4ed533); 
   color: #333;
 }
 

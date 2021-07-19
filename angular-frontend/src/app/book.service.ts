@@ -26,14 +26,6 @@ export class BookService {
     return this.http.put(`${baseUrl}/${id}`, data);
   }
 
-  delete(id: any): Observable<any> {
-    return this.http.delete(`${baseUrl}/${id}`);
-  }
-
-  deleteAll(): Observable<any> {
-    return this.http.delete(baseUrl);
-  }
-
   findByTitle(title: any): Observable<Book[]> {
     return this.http.get<Book[]>(`${baseUrl}?title=${title}`);
   }

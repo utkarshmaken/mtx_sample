@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from './book';
 import { BookService } from './book.service';
-import {NgForm} from '@angular/forms';
 
 
 @Component({
-  selector: 'app-add-book',
+  selector: 'add-book',
   templateUrl: './add-book.component.html',
 })
 export class AddBookComponent implements OnInit {
