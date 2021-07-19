@@ -12,14 +12,15 @@ import { TodoService } from './todo.service';
 import { AddBookComponent } from './add-book.component';
 import { BookService } from './book.service';
 import { AppRoutingModule } from './app-routing.module';
-
+import { BookListComponent } from './book-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
-    AddBookComponent
+    AddBookComponent,
+    BookListComponent
   ],
   imports: [
     BrowserModule,
