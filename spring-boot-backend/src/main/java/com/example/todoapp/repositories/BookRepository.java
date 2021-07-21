@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface BookRepository extends MongoRepository<Book, String> {
 	Book findByTitle(String title);
-    List<Book> findByAuthor(String author);
-    List<Book> findByCity(String city);
+	List<Book> findByAuthor(String author);
+	List<Book> findByCity(String city);
 }
