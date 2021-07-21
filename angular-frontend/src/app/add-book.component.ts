@@ -11,7 +11,7 @@ export class AddBookComponent implements OnInit {
   book: Book = {
     title: '',
     author: '',
-    city: ''
+    city: '',
   };
   submitted = false;
 
@@ -20,11 +20,13 @@ export class AddBookComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
   saveBook(): void {
     const data = {
       title: this.book.title,
       author: this.book.author,
-      city: this.book.city
+      city: this.book.city,
     };
 
     this.bookService.create(data)

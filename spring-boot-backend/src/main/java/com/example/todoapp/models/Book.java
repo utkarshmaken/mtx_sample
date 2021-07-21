@@ -3,6 +3,9 @@ package com.example.todoapp.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import jdk.nashorn.internal.ir.BinaryNode;
+
 import javax.validation.constraints.NotBlank;
 
 
@@ -18,6 +21,7 @@ public class Book
 
     private String author;
     private String city;
+
 
     public Book() {
         super();
@@ -60,6 +64,7 @@ public class Book
     public void setCity (String city) {
         this.city = city;
     }
+
 
     @Override
     public String toString() {

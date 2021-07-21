@@ -43,13 +43,11 @@
           {{ currentBook.author }}
         </div>
         <div>
-          <label><strong>Status:</strong></label>
+          <label><strong>City:</strong></label>
           {{ currentBook.city }}
         </div>
   
-        <a class="badge badge-warning" routerLink="/book/{{ currentBook.id }}">
-          Edit
-        </a>
+        
       </div>
   
       <div *ngIf="!currentBook">

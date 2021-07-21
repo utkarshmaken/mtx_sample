@@ -34,6 +34,18 @@
               name="city"
             />
           </div>
+
+        <div class="form-group">
+            <label for="city">Add PDF</label>
+            <input
+              type="file"
+              class="form-control"
+              id="source"
+              required
+              [(ngModel)]="book.source"
+              name="source"
+            />
+          </div>
   
         <button (click)="saveBook()" class="btn btn-success">Submit</button>
       </div>
