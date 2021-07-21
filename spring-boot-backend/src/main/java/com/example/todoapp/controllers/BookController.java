@@ -31,29 +31,29 @@ public class BookController {
 		return result;
 	}
 
-    @GetMapping("/book/{title}")
-    public ResponseEntity<Book> getBookByTitle(@PathVariable("title") String title){
+    	@GetMapping("/book/{title}")
+    	public ResponseEntity<Book> getBookByTitle(@PathVariable("title") String title) {
         Book book = bookRepository.findByTitle(title);
 		if(book == null)
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		return new ResponseEntity<>(book, HttpStatus.OK);
-    }
+    	}
 
-    @GetMapping("/book/{city}")
-    public ResponseEntity<List<Book>> getBookByCity(@PathVariable("city") String city){
-        List<Book> result =  bookRepository.findByCity(city);
+    	@GetMapping("/book/{city}")
+    	public ResponseEntity<List<Book>> getBookByCity(@PathVariable("city") String city) {
+        	List<Book> result =  bookRepository.findByCity(city);
 		if(result == null || result.isEmpty())
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+    	}
 
-    @GetMapping("/book/{author}")
-    public ResponseEntity<List<Book>> getBookByAuthor(@PathVariable("author") String author){
-        List<Book> result =  bookRepository.findByAuthor(author);
-		if(result == null || result.isEmpty())
-			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-		return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+	@GetMapping("/book/{author}")
+	public ResponseEntity<List<Book>> getBookByAuthor(@PathVariable("author") String author) {
+		List<Book> result =  bookRepository.findByAuthor(author);
+			if(result == null || result.isEmpty())
+				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+			return new ResponseEntity<>(result, HttpStatus.OK);
+	    }
 
 
 	@PostMapping("/book")
