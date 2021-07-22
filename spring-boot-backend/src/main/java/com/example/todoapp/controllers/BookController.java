@@ -61,9 +61,9 @@ public class BookController {
 		return bookRepository.save(book);
 	}
 
-	/*@PutMapping("/book/{title}")
+	@PutMapping("/book/{title}")
   	public ResponseEntity<Book> updateBook(@PathVariable("title") String title, @RequestBody Book book) {
-    	Book bookData = bookRepository.findBytitle(title);
+    		Book bookData = bookRepository.findBytitle(title);
 
 		if (bookData != null) {
 			bookData.setTitle(book.getTitle());
@@ -72,8 +72,8 @@ public class BookController {
 			return new ResponseEntity<>(BookRepository.save(bookData), HttpStatus.OK);
 		} 
 		else {
-		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
-    } */
+    	} 
 
 }
